@@ -78,7 +78,7 @@
 			c = Integer.parseInt(request.getParameter("C"));
 			d = Integer.parseInt(request.getParameter("D"));
 
-			out.println(point24.Game.solve24(new int[]{a, b, c, d})+"=24");
+			out.println(point24.Game.solve24(new int[]{a, b, c, d}));
 		} catch (Exception e) {
 			out.println("Something wrong~");
 		}

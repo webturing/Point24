@@ -1,9 +1,6 @@
 package point24;
-import java.util.Collections;
-import java.util.List;
-import java.util.Random;
-import java.util.Scanner;
-import java.util.Vector;
+
+import java.util.*;
 
 public class Game {
 
@@ -33,8 +30,8 @@ public class Game {
 			if (Math.abs(RPorlandExpression.evalue(exp)- 24.0)<1e-6) {
 				StringBuffer buffer=new StringBuffer();
 				BinaryTree.buildBTree(exp).midVisit(buffer);
-				return buffer.toString();
-			}
+                return buffer.toString().replaceAll(".0", "") + "=24";
+            }
 
 		}
 		return "NO solution?";
