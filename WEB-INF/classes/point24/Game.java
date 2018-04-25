@@ -30,7 +30,7 @@ public class Game {
 			if (Math.abs(RPorlandExpression.evalue(exp)- 24.0)<1e-6) {
 				StringBuffer buffer=new StringBuffer();
 				BinaryTree.buildBTree(exp).midVisit(buffer);
-                return buffer.toString().replaceAll(".0", "") + "=24";
+                return buffer.toString().replaceAll("\\.0", "") + "=24";
             }
 
 		}
